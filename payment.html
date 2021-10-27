@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    
+    <div id="heading">
+        <img src="https://supplier.meesho.com/panel/v2/new/static/fonts/MeeshoLogo.svg ">
+        <img src="https://raw.githubusercontent.com/raman-boddula/meesho-clone/main/cart-3-img.png" id="cart">
+</div>
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Name On Card</h3>
+                <div class="input-field">
+                    <input type="text" id="owner" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password" id="cvv" required>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text" id="cardnum" required>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Expiry</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months" required>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="https://www.logolynx.com/images/logolynx/38/38b8f2f2c2917b4118a8d0fc3ba1ed31.png" class="bord" alt="">
+                    <img src="http://pngimg.com/uploads/visa/visa_PNG10.png" alt="" >
+                    <img src="http://cdn.onlinewebfonts.com/svg/download_436832.png" alt="" class="bord">
+                </div>
+            </div>    
+        </div>
+        <a  href=""><button id="confirm-btn" onclick="confirmPay(event)" >Confirm</button> </a>
+    </div>
+</body>
+</html>
+<script>
+  // console.log(Name,Cvv,CardNum);
+    var flag=true;
+    function confirmPay(e)
+    {
+        
+   var Name = document.getElementById("owner").value;
+   var Cvv = document.getElementById("cvv").value;
+   var CardNum = document.getElementById("cardnum").value;
+        e.preventDefault();
+        if(CardNum.length==16 && Cvv.length==3 &&flag==true){
+       // if((Name !="" || Cvv !="" || CardNum != "" ) && flag==true )
+            flag=false;
+            swal("Congratulations!", "Payment Successfull", "success")
+            setTimeout(()=>window.location.href="summary.html",3000); 
+        }
+        else
+        {
+            swal("Oops!","please enter a valid details","warning")
+        }
+
+    }
+</script>

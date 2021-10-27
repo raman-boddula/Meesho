@@ -1,0 +1,122 @@
+#main{
+    width: 100%;
+
+    display: flex;
+
+}
+  #product-form{
+      box-sizing: border-box;
+      border: 1px solid #e0e0e0;
+      width: 50%;
+      height: 700px;
+      margin: auto;
+      padding-right:  20px;
+
+
+  }
+  
+ #heading {
+     display: flex;
+    width: 100%;
+    text-align: center;
+    color : #EC407A;
+    font-family: sans-serif;
+    justify-content: space-between;
+    margin-left: 22px;
+   
+  }
+  #icon{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 10px;
+  }
+  #Myform
+  {   box-sizing: border-box;
+    padding: 20px;
+      background-color:white;
+      width:95% ;
+      border-radius: 5px;
+      padding: 10px;
+      margin: auto;
+   
+      
+
+  }
+  #Myform input
+  {
+     padding: 2px;
+     border-radius: none;
+  }
+  #productimg,#productprice,#productcode,#productname,#productcat{
+      width: 60%;
+      border: 1px solid #e0e0e0;
+      padding: 2px;
+      height: 30px;
+      font-size: regular;
+      margin-bottom: 10px;
+  }
+  #add-Product{
+      background-color: #EC407A;
+      height: 30px;
+     
+      border-radius: 1px;  
+      border-radius: 2px;
+    }
+    #side-img{
+        display: inline-block;
+        width: 50%;
+        background-color: #EC407A;
+        height: 770px;
+    }
+    #meesho{
+        margin: 50% 20% 20% 42%; 
+        font-family: 'Righteous', cursive;
+        font-size: 50px;
+        color: white;
+    }
+   button {
+background-color: transparent;
+border: 1px solid rgb(244 ,51 ,151);;
+color:rgb(244 ,51 ,151);
+font-weight: regular;
+padding: 10px 30px 10px 30px;
+line-height: 1.4;
+font-size: large;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+
+
+}
+button:nth-child(1){
+margin-left: 50%;
+}
+button:nth-child(2){
+margin-top: 80px;
+}
+.cls{
+background-color: transparent;
+border: 1px solid rgb(244 ,51 ,151);
+color:rgb(244 ,51 ,151);
+font-weight: regular;
+padding: 10px 30px 10px 30px;
+line-height: 1.4;
+font-size: large;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+
+}
+button:hover{
+background-color: rgb(244 ,51 ,151);
+color:white;
+}
+.cls:hover{
+background-color: rgb(244 ,51 ,151);
+color: white
+}
+#logout {
+margin-top: 5px;
+}

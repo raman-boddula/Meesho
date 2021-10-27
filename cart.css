@@ -1,0 +1,133 @@
+*{
+    font-family: roboto , sans-serif;
+    font-size: regular;
+}
+#heading{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: auto;
+}
+#heading > #cart{
+   height: 50px;
+   width: 350px;
+}
+
+#addedProducts
+{
+    box-sizing: border-box;
+    width: 60%;
+ 
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-items: center;
+    grid-gap: 2%;
+    font-size: larger;
+    line-height: 0%;
+
+   
+}
+#addedProducts > div{
+    border: 1px solid #e0e0e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px ;
+
+}
+#container{
+    padding: 20px;
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+   
+    
+}
+#heading > img{
+    width: 150px
+}
+#heading > button {
+    background-color: transparent;
+border: 1px solid rgb(244 ,51 ,151);
+color:rgb(244 ,51 ,151);
+font-weight: regular;
+padding: 10px 30px 10px 30px;
+line-height: 1.4;
+font-size: large;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+
+}
+#heading > button:hover{
+    background-color: rgb(244 ,51 ,151);
+    color: white;
+}
+img
+{
+    width: 100%;
+}
+#detail_product  button
+{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    color : black;
+    border: 1px solid black;
+}
+
+#detail_product  button:hover {
+    background-color: black;
+    color: white;
+  
+}
+
+
+#bill{
+    width: 30%;
+}
+h3{ padding-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0;
+}
+#detail_product{
+ box-sizing: border-box;
+ padding: 10px;
+ 
+}
+
+.delivery{
+display: flex;
+padding-right: 20px;
+justify-content: space-between;
+border-bottom: 1px solid #e0e0e0;
+
+}
+.delivery > h4  {
+padding-right: 10px;
+padding-left: 10px;
+}
+.delivery >h4:nth-child(2){
+color: rgb(87, 84, 84);
+}
+#continue{
+margin-top: 60px;
+background-color: transparent;
+width: 100%;
+border: 1px solid rgb(244 ,51 ,151);
+color:rgb(244 ,51 ,151);
+font-weight: regular;
+padding: 10px 30px 10px 30px;
+line-height: 1.4;
+font-size: large;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+}
+#continue:hover{
+background-color: rgb(244 ,51 ,151);
+color: white;
+}
+#cart{
+
+width: 800px;
+} 

@@ -1,0 +1,62 @@
+* {
+    font-family: roboto, sans-serif;
+    font-weight: regular;
+  }
+  #heading{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+  #products {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+  }
+ #products img{
+        width: 100%;
+ }
+ #detail{
+   font-size: large;
+   padding: 10px;
+  
+ }
+ #detail > h6{
+   margin: 0;
+   margin-top:1px;
+ }
+
+  /* div > div{
+    background-color: whitesmoke;
+   /* border: 2px solid #CFD8DC;
+    
+}*/
+  button {
+    background-color: #ec407a;
+    color: white;
+    width: 70%;
+    font-size: regular;
+    border: none;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 5%;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  div > button :hover {
+    color: black;
+    cursor: pointer;
+  }
+  #cart{
+    cursor: pointer;
+  }
+  #shopping{
+    border: 1px solid #e0e0e0;
+  }

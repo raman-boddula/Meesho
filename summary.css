@@ -1,0 +1,47 @@
+                
+    .navbar{
+        display: grid;
+        grid-template-columns: 10% 10% 60% 20%;
+        box-shadow: 1px 1px 2px 0px gray;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        background-color: white;
+    }
+    .navbar > div{
+        margin: auto;
+        
+    }
+    #need{
+        padding-top: 0.8%;
+    }
+    #summary{
+        width: 40%;
+        padding: 1%;
+        background-color: #C8E6C9;
+        margin: auto;
+        margin-top: 8%;
+        box-shadow: 1px 1px 2px 0px gray;
+        text-align: center;
+        
+    }
+    .fa{
+        background-color: greenyellow;
+        color: black;
+        border-radius: 50%;
+    }
+    #btn{
+        width: 30%;
+        font-weight: bold;
+        margin: auto;
+        padding: 1%;
+        background-color: palevioletred;
+        border: none;
+        color: white;
+        border-radius: 1%;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.meeshosupply.com/web/meesho-logo-fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="addStyle.css">
+    <title>Address | Meesho</title>
+</head>
+<body>
+    
+    <div id="heading">
+       <a href="meesho_homepage.html"> <img src="https://supplier.meesho.com/panel/v2/new/static/fonts/MeeshoLogo.svg " ></a>
+        <img src="https://raw.githubusercontent.com/raman-boddula/meesho-clone/main/cart-2-img.png" id="cart">
+</div>
+
+    <div class="address" >
+        <h5 id="logo"> <i class="fa fa-phone" aria-hidden="true"></i> Contact Details</h5>
+        <input type="text" id="name" placeholder="Name" required /><br>
+        <input type="text" name="" id="phone" placeholder="Phone Number" required /><br>
+        <h4> <i class="fa fa-map-marker" aria-hidden="true"> </i>&nbsp; Address </h4>
+        <input type="text" name="" id="house" placeholder="House No/Building Name" required /><br>
+        <input type="text" id="road" placeholder="Road Name / Area / Colony" required /><br>
+        <input type="text" id="pincode" placeholder="Pincode" required /><br>
+        <div id="comb"><input type="text" name="" id="city" placeholder="City" required>&nbsp; <input type="text" placeholder="State" id="state" required ><br></div>
+        <br>
+        <input type="text" id="nearby" placeholder="Nearby Location (Optional)"/><br>
+        <button onclick="saveAndSubmit(event)" id="savebtn">Save Address & Continue</button>
+    </div>
+    
+</body>
+</html>
+<script>
+    function saveAndSubmit(e){
+        if(document.getElementById("name").value != null ||document.getElementById("phone").value != null ||document.getElementById("house").value != null||document.getElementById("city").value != null)
+        
+        {
+            window.location.href="payment.html";
+        }
+    }
+</script>

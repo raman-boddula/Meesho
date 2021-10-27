@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://static.meeshosupply.com/web/meesho-logo-fav.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="Usignup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <img src="https://supplier.meesho.com/panel/v2/new/static/fonts/MeeshoLogo.svg ">
+            <button class="clr" id="login">Log In</button>
+        </div>
+        <div class="box">
+             <div class="box_heading">
+                 <h2 class="zero_margin">Welcome To Meesho</h2>
+                 <p class="zero_margin">Create Your Account to start selling</p>
+             </div>
+             <div class="box_form">
+                <div id="phone_number">
+                    <input type="number" id="phone" placeholder="Phone Number"  required/>
+                    <button id="btn" class="gy">Send OTP</button>  
+                    </div>
+                    <div id="phone_number">
+                    <input id="otp" placeholder="Enter OTP">
+                    <button id="verify" class="gy" > Verify</button>
+                </div>
+                    
+                </div>
+                   <form id="myForm" >
+            <input type="text" id="name" placeholder="Name" required />
+                   
+             <input type="email" id="email" placeholder="Email" required/>
+            
+             <input type="password" id = "password"  placeholder="Password" required/>
+             <button  id="submit" onclick="signup(event)" class="bg" style="width: 100%">Create Account</button>
+                    
+            </form>
+
+             
+             </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="Usignup.js">
+    
+</script>
+</html>
