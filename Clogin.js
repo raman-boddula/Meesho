@@ -24,11 +24,15 @@ function signin(e){
   
    })
   console.log(istrue);
-  if ( istrue){
+  if (istrue) {
+    swal("Congratulations!", "You have successfully Loggedin", "success");
+    setTimeout(() => {
+      
     window.location.href = 'meesho_cart.html';
+    },3000)
   }
   else if ( !istrue){
-      alert('Invailed email and password!');
+      swal("Oops!",'Invailed email or password!',"error");
   }
 }
 let signup = document.getElementById('signup');

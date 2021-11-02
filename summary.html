@@ -22,16 +22,26 @@
     </div>
     <div id="summary">
         <i class="fa fa-check-circle-o" aria-hidden="true"></i><h3>Thank you for shopping</h3>
-        <button id="btn" onclick="moveNext(event)" >
-           <a href="meesho_homepage.html"> Continue Shopping</a></button>
+        <h3>You order #id <span id="orderid"></span> will be delivered with in 3-5 business days</h3>
+        <button id="btn">
+        <a href="index.html">Continue Shopping</a></button>
       
     </div>
     
 </body>
 </html>
 <script>
-function moveNext(e)
+    var orderId = document.getElementById('orderid');
+
+function rand(){
+    var num = "1078-4401-24";
+    var add = Math.floor(Math.random(9) * 100);
+    num += add
+    orderId.textContent=num;
+}
+rand()
+function moveNext()
 {
-       location.window.href="homepage.html";
+       location.window.href="index.html";
    }
 </script>

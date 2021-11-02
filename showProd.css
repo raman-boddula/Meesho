@@ -10,7 +10,7 @@
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 15px;
   }
-  #products {
+  #products,#Kurthis,#Kids,#other {
     width: 85%;
     margin: auto;
     display: grid;
@@ -23,6 +23,15 @@
  #products img{
         width: 100%;
  }
+ #Kurthis img{
+   width: 100%;
+ }
+ #Kids img{
+   width: 100%;
+ }
+ #other  img{
+   width: 100%;
+ }
  #detail{
    font-size: large;
    padding: 10px;
@@ -32,6 +41,24 @@
    margin: 0;
    margin-top:1px;
  }
+ .hding{
+  display: grid;
+  width: 70%;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 2%;
+  padding: 1%;
+  margin: auto;
+}
+h1{
+  text-align: center;
+}
+hr{
+  background-color: #EC407A;
+  padding: 0.3px;
+  box-shadow: 1px 1px 2px 0px #EC407A;
+  line-height: 5%;
+  margin-top: 12%;
+}
 
   /* div > div{
     background-color: whitesmoke;

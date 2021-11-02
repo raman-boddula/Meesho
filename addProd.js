@@ -48,5 +48,5 @@ function addProduct(e)
 let logout = document.getElementById('logout');
 logout.addEventListener('click',function(){
     localStorage.setItem('current_bussiness_user',JSON.stringify(null));
-    window.location.href = 'meesho_homepage.html';
+    window.location.href = 'index.html';
 })

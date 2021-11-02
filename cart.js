@@ -66,35 +66,35 @@ function retrieve_users() {
        });
     });
 }
-let data =[{
-        Product_Img : "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/6/29/0e8572b7-f5fd-4995-843f-2c1dae6655461624950815660-1.jpg",
-        Product_Price : 1299,
-        Product_Name : "Peach Baluchari Saree",
-        Product_Code :110
-    },{
-        Product_Img :"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14984834/2021/8/27/9244a227-c9c4-4a1c-b049-b84938aea6a01630043068462-Saree-Mall-Yellow-Georgette-Ethnic-Solid-Party-Wear-Saree-wi-1.jpg",
-        Product_Price:1199,
-        Product_Name : "Poly Georgette Saree",
-        Product_Code :109
+// let data =[{
+//         Product_Img : "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/6/29/0e8572b7-f5fd-4995-843f-2c1dae6655461624950815660-1.jpg",
+//         Product_Price : 1299,
+//         Product_Name : "Peach Baluchari Saree",
+//         Product_Code :110
+//     },{
+//         Product_Img :"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14984834/2021/8/27/9244a227-c9c4-4a1c-b049-b84938aea6a01630043068462-Saree-Mall-Yellow-Georgette-Ethnic-Solid-Party-Wear-Saree-wi-1.jpg",
+//         Product_Price:1199,
+//         Product_Name : "Poly Georgette Saree",
+//         Product_Code :109
     
-    },
-    {
-        Product_Img :"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14975358/2021/7/29/9e1484a0-92f8-4871-9b98-fc9f389406691627570339977KALINIWomenBlackPrinted1.jpg",
-        Product_Price  :799,
-        Product_Name :"Ethnic Motifis Saree",
-        Product_Code :108
+//     },
+//     {
+//         Product_Img :"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14975358/2021/7/29/9e1484a0-92f8-4871-9b98-fc9f389406691627570339977KALINIWomenBlackPrinted1.jpg",
+//         Product_Price  :799,
+//         Product_Name :"Ethnic Motifis Saree",
+//         Product_Code :108
     
-    }
-];
-    var s=0;
-    data.forEach((pr)=>{
-        showProduct(pr);
-      s+=Number(pr.Product_Price);
-    })
-    console.log('s',s)
-    var su =document.getElementById('before');
-    s=s+sum_price;
-    su.textContent=s;
+//     }
+// ];
+    // var s=0;
+    // data.forEach((pr)=>{
+    //     showProduct(pr);
+    //   s+=Number(pr.Product_Price);
+    // // })
+    // console.log('s',s)
+    // var su =document.getElementById('before');
+    // s=s+sum_price;
+    // su.textContent=s;
   retrieve_users();
 
   function showProduct(product) {
@@ -128,7 +128,7 @@ let data =[{
 
   let logout = document.getElementById('logout');
   logout.addEventListener('click',function(){
-      window.location.href = 'meesho_homepage.html';
+      window.location.href = 'consumer_login.html';
       localStorage.setItem('current_user',JSON.stringify(null));
   })
 

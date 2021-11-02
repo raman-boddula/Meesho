@@ -67,12 +67,13 @@ let otp_arr = [];
       console.log(otp);
       
       if ( otp_arr[otp_arr.length - 1] == otp.value ){
-          otp.style.borderColor = 'green';
+        otp.style.borderColor = 'green';
+        swal("Congratulations","otp is verified","success");
     
 
       }
       else {
-          alert('otp is incorrect');
+          swal("Oops!","otp is incorrect","error");
       }
   })
 }
@@ -94,10 +95,10 @@ isCheck();
         let password = myForm.password.value;
 
         if ( signin() && verify_otp()){
-            alert('you are already registered');
+            swal('Oops!','you are already registered',"warning");
         }
         else if ( !verify_otp()){
-            alert('Your otp is incorrect');
+            swal("Oops!",'Your otp is incorrect',"error");
         }
        else {
            let con = JSON.parse(localStorage.getItem('consumer_users'));
@@ -124,7 +125,9 @@ isCheck();
         
             localStorage.setItem('consumer_users',JSON.stringify(arr));
             swal("Congratulations!", "You have registered successfully!", "success")
+          setTimeout(() => {
             window.location.href= 'consumer_login.html';
+           },3000) 
          
     }
 
@@ -133,7 +136,10 @@ isCheck();
   
 
  let login = document.getElementById('login');
-login.addEventListener('click',function(){
+login.addEventListener('click', function ()
+{
+  setTimeout(() => {
     window.location.href = 'consumer_login.html';
+   },10)
 })
  
