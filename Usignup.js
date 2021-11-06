@@ -59,8 +59,10 @@ let otp = document.getElementById('otp');
 verify.addEventListener('click',function(){
   //console.log(otp);
   
-  if ( otp_arr[otp_arr.length - 1] == otp.value ){
+    if (otp_arr[otp_arr.length - 1] == otp.value) {
+      swal("congratulations!","Otp is Verified","success")
       otp.style.borderColor = 'green';
+      
 
 
   }
@@ -89,10 +91,10 @@ function signup(e){
     let password = myForm.password.value;
 
     if ( signin() && verify_otp()){
-        alert('you are already registered');
+        swal("Oops!",'You have already registered',"error");
     }
     else if ( !verify_otp()){
-        alert('Your otp is incorrect');
+        swal("Oops!",'Your otp is incorrect',"error");
     }
    else {
     if ( localStorage.getItem('bussiness_users') === null){

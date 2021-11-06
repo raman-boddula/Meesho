@@ -29,11 +29,14 @@ var bussiness_user = JSON.parse(localStorage.getItem('bussiness_users'))
       
        }
       console.log(istrue);
-      if ( istrue){
-        window.location.href = 'meesho_addProduct.html';
+        if (istrue) {
+          swal("congratulations!","you are the right person",'success')
+            setTimeout(() => {
+                window.location.href = 'meesho_addProduct.html'; 
+        },1500) 
       }
       else if ( !istrue){
-          alert('Invailed email and password!');
+          swal("Oops!",'Invailed email and password!',"error");
       }
     }
 

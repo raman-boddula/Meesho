@@ -11,7 +11,7 @@ function sign(products){
           console.log(bussiness_user);
           localStorage.setItem('bussiness_users',JSON.stringify(bussiness_user));
           
-            
+            swal("Congratulations!", "You have successfully added a product", "success");
         }
     })
 }
@@ -47,6 +47,10 @@ function addProduct(e)
 
 let logout = document.getElementById('logout');
 logout.addEventListener('click',function(){
-    localStorage.setItem('current_bussiness_user',JSON.stringify(null));
-    window.location.href = 'index.html';
+    localStorage.setItem('current_bussiness_user', JSON.stringify(null));
+    swal("Success", "Loggedout Successfully", "success")
+    setTimeout(() => {
+        window.location.href = 'messho_login.html';    
+    },3000)
+    
 })
