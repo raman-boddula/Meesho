@@ -1,5 +1,5 @@
 # Meesho
-This is dynamic website which is developed by using the javascript and css and html.
+This is dynamic website which is developed by using the javascript and css and html.It has both aspects to sell the products you have and buy the products you like.
 
 ## Screenshots
 ## Homepage 
